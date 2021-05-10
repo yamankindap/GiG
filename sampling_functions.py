@@ -136,8 +136,8 @@ def sim_condition2_N2(lam, gamma, delta, M=100):
     return jump_sequence    
 
 def sim_condition2(lam, gamma, delta, M):
-    N1 = sim_condition2_N1(lam, gamma, delta, M=M)
-    N2 = sim_condition2_N2(lam, gamma, delta, M=M)
+    N1 = sim_condition2_N1(lam, gamma, delta, M=int(M/2))
+    N2 = sim_condition2_N2(lam, gamma, delta, M=int(M/2))
     N = np.append(N1, N2)
     return N
 
